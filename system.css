@@ -1,0 +1,4420 @@
+@import url('/siteelements/styles/bootstrap/bootstrapGrid.css') screen;
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/* 
+
+CMS User styles
+================================================== 
+
+*/
+
+.link_chart,
+.link_excel,
+.link_external,
+.link_map,
+.link_pdf,
+.link_powerpoint,
+.link_word,
+.link_calendar,
+.link_more,
+.link_backtotop,
+.link_survey,
+.link_print,
+.link_rightarrow{
+	background-color: transparent;
+	background-position: 2px 50%;
+	background-repeat: no-repeat;
+	padding: 3px 0 3px 22px;
+}
+
+.link_chart{
+	background-image: url(/images/icons/links/linkchart.png);
+}
+
+.link_excel{
+	background-image: url(/images/icons/links/linkexcel.png);
+}
+
+.link_external{
+	background-image: url(/images/icons/links/linkexternal.png);
+}
+
+.link_map{
+	background-image: url(/images/icons/links/linkmap.png);
+}
+
+.link_pdf{
+	background-image: url(/images/icons/links/linkpdf.png);	
+}
+
+.link_powerpoint{
+	background-image: url(/images/icons/links/linkpowerpoint.png);
+}
+
+.link_word{
+	background-image: url(/images/icons/links/linkword.png);
+}
+
+.link_calendar{
+	background-image: url(/images/icons/links/linkcalendar.png);
+}
+
+.link_more{
+	background-image: url(/images/icons/links/linkmore.png);
+}
+
+.link_backtotop{
+	background-image: url(/images/icons/links/linkbacktotop.png);	
+}
+
+.link_print{
+	background-image: url(/images/icons/links/linkprint.png);	
+}
+
+.link_print_top{
+	margin-top:6px
+}
+
+.link_survey{
+	background-image: url(/images/icons/links/linksurvey.png);
+}
+
+.link_rightarrow{
+	background-image: url(/images/icons/links/linkrightarrow.png);
+}
+
+.link_underline{
+	border-bottom: 1px solid #ddd;
+ display: block;
+ margin-top: -14px;
+}
+
+.link_bold{
+	font-weight: bold;
+}
+
+.link_info{
+	color: #757575;
+	font-size: 0.8em;
+}
+
+.link_previous,
+.link_next{ 
+	background-repeat: no-repeat;
+	border: 1px solid #E0E0E0;
+	display: block;
+	float: left;
+	margin:0 0.5em 1em 0;
+	padding: 26px 16px;
+	width:49%;
+}
+
+.link_previous:hover,
+.link_next:hover{
+	background-color: #F5F5F5;
+	border: 1px solid #E0E0E0;
+}
+
+.link_previous{
+	background-image: url(/images/icons/links/pagination-previous.png);
+	background-position: 1% 50%;
+	padding-left: 60px
+}
+
+.link_next{
+	background-image: url(/images/icons/links/pagination-next.png);
+	background-position: 99% 50%;
+	padding-right: 60px
+}
+
+.link_previous:before{
+	content: "Previous page: "
+}
+
+.link_next:before{
+	content: "Next page: "
+}
+
+input[type="button"],
+input[type="submit"],
+button[type="submit"]{
+ -webkit-appearance: none;
+}
+
+.imageleft {
+	padding-right: 3px;
+	float: left;
+	margin: 0 15px 0 0;
+}
+
+.imageright {
+	padding-left: 3px;
+	float: right;
+	margin: 0 0 0 15px;
+}
+
+@media handheld, only screen and (max-width:480px){
+	
+	.imageleft,
+	.imageright{
+		width: 45%;
+		height: 100%;
+		padding:0;
+		margin: 0 0 1em 5%;
+	}
+
+}	
+
+.imagecentre {
+	margin: auto
+}
+
+.tablethird {
+	width: 33%
+}
+
+.tablequarter {
+	width: 25%
+}
+
+.clearfloats {
+	clear: left;
+}
+
+.linkbreak {
+    display: none;
+}
+
+.mobile {
+	display: none !important;
+}
+
+/* 
+
+CMS User form styles 
+
+*/
+
+.small-header {
+	padding: 0 0 0 0 !important;
+}
+
+.small-form-header {
+	font-size: 1em !important;
+}
+
+.hide-this {
+	position: absolute !important;
+	left: -9999px;
+	top: -9999px;
+}
+/*-----------------------------------------------------------------
+
+    Global
+
+-----------------------------------------------------------------*/
+
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,  dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,  a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,  strong, sub, sup, tt, var, legend, fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #FFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+img {
+	display: block;
+}
+	
+H1, H2, H3, H4, H5, H6, P, TABLE, UL, OL {
+	margin-bottom: 1em;
+	font-weight: 400
+}
+
+H1, H2 {
+    font-family: 'Open Sans', sans-serif;
+	font-weight: 700
+}
+
+H3, H4, H5, H6 {
+    font-family: 'Open Sans', sans-serif;
+	font-weight: 700
+}
+
+H1 {
+	font-size: 2em;
+	margin-top:0.5em;
+}
+
+H2 {
+	font-size: 1.5em;
+}
+
+H2 STRONG { 
+	font-weight: 700
+}
+
+H3 {
+	font-size: 1.3em;
+}
+
+H4, H5, H6 {
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+blockquote.pull-quote {
+	border-left: 5px solid #ccc;
+	padding: 15px;
+	background-color: #f4f4f4;
+	margin-bottom: 15px;
+}
+
+blockquote.pull-quote p:last-child {
+	margin-bottom: 0em;
+}
+	
+.system_container {
+	line-height: 1.5;
+	color: #333;
+}
+
+#system_contentarea {
+background: #ffffff;
+}
+
+#system_content ul,
+.sys_websitealert ul {
+	padding-left: 30px;
+	list-style-type: disc;
+}
+
+#system_content ol {
+	padding-left: 30px;
+}
+
+#system_content ul li{
+	margin-bottom: 0.5em;
+}
+
+/*
+li, dt, dd,  p, pre, address,  legend, label, input, textarea,  select, option, optgroup,  th, td {
+	font: inherit
+}
+*/
+
+a, a:link, a:active, a:visited {
+	color: #007FD0;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	color: #2f2f2f;
+	text-decoration: underline;
+}
+
+a img, a:link img, a:active img, a:visited img {
+	border: 0;
+}
+
+
+/*-----------------------------------------------------------------
+
+    Tables
+
+-----------------------------------------------------------------*/
+
+table {
+	width: 99%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: transparent;
+	border-bottom: 1px solid #ddd;
+}
+
+table th {
+	font-weight: bold;
+	border-top: 1px solid #ddd;
+ background: #ddd!important;
+}
+
+th, td {
+	padding: 8px;
+	line-height: 18px;
+	text-align: left;
+	vertical-align: top;
+	border-top: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+}
+
+td:last-child, th:last-child {
+	border-right: none;
+}
+
+ tbody tr:nth-child(even) td, tbody tr:nth-child(even) th {
+ background-color: #f9f9f9;
+}
+
+
+/*-----------------------------------------------------------------
+
+    Structure
+
+-----------------------------------------------------------------*/
+
+.system_container{
+	padding: 0;
+	margin: 0 auto;
+	width: 95%;
+	/* min-width: 750px; */
+	max-width: 1300px;
+	position: relative
+}
+
+#sys_cookies {
+    float: right;
+    font-size: 0.8em;
+    height: 17px;
+    margin-top: 7px;
+}
+
+#sys_cookies p {
+    margin-bottom: 3px; 
+    line-height: 1em; 
+    padding-bottom: 0;
+}
+	
+#header {
+	z-index: 100;
+	background:#f2f2f2;
+	float: left;
+	margin: 0;
+	width: 100%;
+	height: auto;
+}
+
+#logo_area {
+	background-color: #2f2f2f;
+	float: left;
+	width: 100%;
+	height: 97px;	
+}
+
+#logo {
+	float: left;
+	position: relative;
+	top: 18px;
+	width:190px;
+}
+
+#logo img{
+	width: 190px;
+}
+
+#logo H1 {
+	left: -99999px;
+	position: absolute;
+}
+
+/* 	=====================
+	
+	Search - ICT Applications
+*/
+
+.bannerad {
+	padding: 15px 15px 0 0;
+	float: right;
+	width: 300px;
+	height: 55px;
+    z-index:999;
+    margin-right: 10px;
+  margin-top: 5px;
+}
+
+.bannerad iframe {
+	height: 55px;
+	width: 300px;
+	display: block;
+	border: 0px;
+	overflow: hidden
+}
+
+/* 	=====================
+	
+	Search - CMS Templates
+*/
+
+.sys_search-box * { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+	
+.sys_search-box {
+	padding-top: 1em;
+}
+
+.sys_search-box .sys_search-query-control {
+	float: right;
+	width: auto;
+	margin-right: 15px
+}
+
+.sys_search-box .sys_search-label {
+	position: absolute;
+	left: -9999px;
+}
+
+.sys_search-box .sys_searchbox {
+	background-color: #fff;
+	padding: 0.94em 2em 0.92em 1em;
+	border: 4px solid #fff;
+	font-size: 1em;
+	color: #111;
+	width: 30em;
+	height: auto;
+	margin-bottom: 0;
+	clear:none;
+	height: 55px;
+	margin-top: 5px
+}
+
+@media screen and (max-width: 960px) and (min-width: 601px){
+    .sys_search-box .sys_searchbox {
+        width:20em;
+    }
+}
+
+.sys_search-box .sys_searchbox:focus {
+	background-color: #fff;
+}
+
+.sys_search-box .sys_search-button {
+	padding: 1.35em 2em 1.15em 1em;
+	background: #037ecb url(https://www.gateshead.gov.uk/SiteElements/Icons/Misc/Site-Search-Icon.png) no-repeat 50% 50%;
+	display: inline-block;
+	border: none;
+	text-indent: -9999px;
+	width: 55px;
+	clear: none;
+	margin-right: 0;
+	height: 55px;
+	float: right;
+	margin: 5px 5px 25px 0;
+}
+
+.sys_search-box .sys_search-button:hover {
+	background: #00a8e6 url(https://www.gateshead.gov.uk/SiteElements/Icons/Misc/Site-Search-Icon.png) no-repeat 50% 50%;
+	cursor: pointer;
+}
+
+/* 	=====================
+	
+	Top navigation - ICT Applications
+*/
+
+/* no longer used, hidden */
+
+#top_navigation ul ul,
+#top_navigation ul li a.mygateshead,
+#top_navigation ul li a.toptasks,
+#top_navigation .site_search .sys_search-query-control,
+#top_navigation .site_search .sys_search-query-control .sys_search-label {
+	display: none;
+}
+		
+#top_navigation {
+	z-index: 3000;
+	float: left;
+	width: 100%;
+	color: #fff;
+	position: relative;
+	background-color: #00a8e6;
+}
+
+#top_navigation a:hover {
+	text-decoration: none;
+}
+
+#top_navigation ul {
+	float: left;
+	list-style-type: none;
+	position: relative;
+	margin-bottom: 0;
+	padding: 3px;
+}
+
+#top_navigation ul li {
+	display: inline
+}
+
+#top_navigation ul li a {
+	color: #fff;
+	display: inline-block;
+	padding: 8px 8px;
+	background-color: #00a8e6;
+	border-left: 1px solid #00a8e6;
+	border-right: 1px solid #00a8e6;
+	border-radius: 3px;
+}
+
+#top_navigation ul li a:hover {
+	border-left: 1px solid #ebf7fd;
+	border-right: 1px solid #ebf7fd;
+	background: #ebf7fd;
+	color: #2b2b2b
+}
+
+/* 	=====================
+	
+	Top navigation - CMS Templates
+*/
+
+
+.sys_menu-wrap {
+	width: 100%;
+	background-color: #00a8e6;
+	clear:both;
+	width: 100%;
+	float: left;
+}
+
+.sys_site-menu {
+	padding: 3px;
+	float: left;
+}
+
+.mobile-panel {
+	display: none;
+}
+
+.sys_site-menu a {
+	color: #fff;
+	display: inline-block;
+	padding: 8px 22px 8px 8px;
+	background-color: #00a8e6;
+	border-radius: 3px;
+}
+
+.sys_site-menu a.both {
+	padding-right: 8px;
+}
+
+.sys_site-menu a.down {
+	background: url(https://www.gateshead.gov.uk/SiteElements/Icons/Misc/Down-Arrow-Light.png) no-repeat 95% 50%
+}
+
+.sys_site-menu a:hover,
+.recite-button:hover{
+	background: #ebf7fd;
+	color: #2b2b2b;
+	text-decoration: none;
+	-moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+	cursor: pointer;
+}
+
+.sys_site-menu a.down:hover {
+	background: #ebf7fd url(https://www.gateshead.gov.uk/SiteElements/Icons/Misc/Down-Arrow.png) no-repeat 95% 50%;
+	color: #2b2b2b;
+	text-decoration: none;
+	-moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
+}
+
+.recite-button {
+	color: #FFF;
+	cursor: pointer;
+	float: right;
+	display: inline-block;
+	padding: 8px;
+	background-color: #00a8e6;
+	border-radius: 3px;
+	margin: 3px;
+	background-image: url("https://www.gateshead.gov.uk/SiteElements/Icons/Icons-2014/accessibility.png");
+	background-position:top right;
+	background-repeat: no-repeat;
+	padding-right: 65px;
+	margin-right:10px;
+}
+
+.recite-button:hover {
+	background-image: url("https://www.gateshead.gov.uk/SiteElements/Icons/Icons-2014/accessibility.png");
+	background-position:bottom right;
+	background-repeat: no-repeat;
+}
+
+
+.sys_toggle {
+	height:395px;
+	overflow: hidden;
+	display: block;
+	background: #f2f2f2;
+	width: 100%;
+	position: relative;
+	padding: 25px 0;
+	clear:both;
+	float:left
+}
+
+.toggle4, .toggle3, .toggle5, .toggle6 {height:370px;}
+
+.sys_toggleclose SPAN {
+	display: block;
+	width: 26px;
+	height: 26px;
+	text-indent: -9999px;
+	background: url(http://www.gateshead.gov.uk/SiteElements/Icons/cancel2.png);
+	position:absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.sys_toggleclose SPAN:hover {
+	cursor: pointer;
+}
+
+.sys_menutasks {
+	width: 99%;
+	margin-left: 3.8%;
+	float:left;
+	min-height: 5px;
+	margin-left: 15px;
+	margin-bottom: 17px;
+}
+
+.sys_menutasks .sys_generic_list-control {
+	/* border-top: 1px solid #DDDDDD; */
+	/* border-left: 1px solid #DDDDDD; */
+	width: 100%;
+	min-height: 5px;
+	font-size: 0.8em;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	float: left;
+	margin-top: 10px;
+}
+
+.sys_toggle h2 {
+	color: #2b2b2b;
+	width: 100%;
+	margin-top: 15px;
+	padding-top: 0px;
+	margin-bottom: 0.5em
+}
+
+.sys_toggle .sys_menusections h2 {
+	margin-left: 20px;
+}
+
+.system_container .sys_menutasks .sys_subitem {
+	width: 33.3%;
+	*
+	width: 33.1%;
+	float: left;
+	height: 90px;
+	padding: 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	/* border-right: 1px solid #DDDDDD; */
+	/* border-bottom: 1px solid #DDDDDD; */
+	clear: none;
+	margin-top: 0;
+	position: relative;
+}
+
+.system_container .sys_menutasks .sys_subitem:hover {
+	background: #eee
+}
+
+.system_container .sys_menutasks h3.sys_subitem-heading {
+	font-size:1.3em;
+	margin-bottom:0;
+	padding:10px 0;
+}
+
+.system_container .sys_menutasks h3.sys_subitem-heading a {
+	padding-top: 10px;
+	padding-bottom: 0;
+	position:absolute;
+	width:100%;
+	display:block;
+	height: 70px;
+	padding-left: 80px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	width: 170px\8;
+}
+
+.system_container .sys_menutasks .sys_thumbnail {
+	float: left; 
+	top: 10px;
+	width: 80px;
+	height: 80px;
+	margin-left: 0;
+	margin-top: 0
+}
+
+.system_container .sys_menutasks .sys_thumbnail IMG {
+	width: 70%;
+	margin: -9% 15% 15%;
+}
+
+.sys_menusections {
+	width: 29%;
+	float: left;
+	margin-right: 2.8%
+}
+
+.sys_menusections ul {
+	padding: 0;
+	margin: 0;
+	margin-left: 20px;
+	padding-top: 3px;
+}
+
+.sys_menusections ul li {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.sys_menusections ul li a {
+	padding: 4px 10px;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	background: url(https://www.gateshead.gov.uk/images/structure/1001_leftnav_linkbg.gif) no-repeat 0px 14px;
+}
+
+.wrap {
+	padding: 20px;
+}
+
+.sys_menusections ul {
+
+}
+	
+#system_contentarea {
+	z-index: 1;
+	float: left;
+	position: relative;
+	width: 100%;
+	margin-top: 5px
+}
+
+#system_contentarea #title {
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+#system_contentarea #title H1 {
+	font-weight: 700;
+	padding-bottom: 6px;
+	margin: 0;
+	color: #2b2b2b;
+	letter-spacing: normal;
+	font-size: 2.1em;
+	line-height: 1.16em;
+	margin-top: 25px;
+}
+
+#system_contentarea #title H1 strong {
+	font-weight: 600;
+}
+
+
+
+/*--------------------------------
+
+BREADCRUMB
+
+---------------------------------*/
+
+.breadcrumb {
+	padding: 24px 0 8px 0;
+	font-size: 1em;
+	color: #5F5F5F;
+}
+
+.breadcrumb a {
+ 	color: #007FD0;
+}
+
+.breadcrumb a:hover {
+	color:#333333;
+}
+
+#system_contentarea #system_branding {
+	width: 74.05%;
+}
+
+#system_navigation {
+	float: left;
+	overflow: visible;
+	width: 22.05%;
+	height: auto;
+	margin-right: 3.8%;
+}
+
+.mobilemenu{display:none !important;}
+
+.v-menu{
+	display:block;
+}
+		
+.system_menu {
+	margin: 75px 0 15px 0;
+	overflow: hidden;
+	width: 100%;
+	/*border-bottom: 1px solid #d3d3d3*/
+}
+
+.system_menu a  {
+	padding: 5px 0 5px 10px;
+	display: block;
+	background: url(/SiteElements/images/rightHandNavigationArrow.png) #fff no-repeat 0px 11px;
+	text-decoration: none;
+	color: #2b2b2b !important;
+}
+
+.system_menu a:hover {
+	color: #007FD0 !important;
+}
+
+/*
+.system_menu div a:before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: ' ';
+	display: inline-block;
+	height: 0.45em;
+	left: 0;
+	position: relative;
+	top: 4px;
+	transform: rotate(45deg);
+	vertical-align: top;
+	width: 0.50em;
+	margin-right:10px;
+}
+*/
+
+.system_menu .home a {
+	display: none;
+}
+
+.system_menu .home a:hover {
+	/*background: #f5f9ff;*/
+	color: #007FD0
+}
+
+.parent_folder {
+ display:none;
+}
+
+.system_menu .parent_folder a {
+	padding: 12px 0px 8px;
+	background: #fff;
+	color: #2f2f2f;
+	font-size: 1.3em;
+	/*font-family: Georgia, "Times New Roman", Times, serif;*/
+}
+
+.system_menu .parent_folder a::before{
+	border:none;
+	margin-right: 0;
+	width: 0;
+}
+
+.system_menu div:first-child.parent_folder a {
+	font-size: 1.5em;
+}
+
+.system_menu div:first-child.current_folder a {
+	font-size: 1.5em;
+}
+
+.system_menu .parent_folder a:hover {
+	color: #007FD0;
+	background: white;
+	text-decoration: underline;
+}
+
+.current_folder {
+	border-bottom: 4px solid #2f2f2f;
+	margin-bottom: 6px
+}
+
+.system_menu .current_folder a {
+	padding: 12px 0px 8px;
+	background: #fff;
+	color: #2f2f2f;
+	font-size: 1.2em;
+	/*font-family: Georgia, "Times New Roman", Times, serif;*/
+	border-bottom: 1px solid #d3d3d3
+}
+
+.system_menu .current_folder a:hover {
+	background: #fff;
+	color: #007FD0
+}
+
+.system_menu .current_item a {
+	font-weight: bold;
+}
+
+.current_item {
+	font-weight: bold;
+
+}
+
+.item {
+
+}
+
+#system_contentwrapper {
+	display: inline;
+  	position: relative;
+  	margin-bottom: 3em;
+}
+
+#system_content {
+	position: static;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+#system_extracontent {
+	/* float: right; */
+	/* margin-left: 30px; */
+}
+
+#system_extracontent SPAN.extrablank {
+	display: none
+}
+	
+#footer {
+	background: #2b2b2b;
+	float: left;
+	margin: 0 0 10px;
+	width: 100%
+}
+
+.sys_footer-feedback {
+	width: 100%;
+	background: #fff;
+	float: left;
+	padding:1em 0;
+}
+
+.sys_footer-mailchimp {
+	width: 100%;
+	background: #e2e2e2;
+	float: left;
+	padding-bottom: 1em;
+}
+
+.sys_footer-wrapper {
+	padding: 20px 20px 20px 0;
+	/*float: left*/
+}
+
+.sys_footer-wrapper h2{
+	display: block;
+	float: left;
+	margin: 12px 12px auto auto;
+}
+
+.sys_footer-feedback ul  {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	display: block
+}
+
+.sys_footer-feedback ul li {
+	padding: 0px;
+	margin: 0px;
+	display: inline
+}
+
+.sys_footer-feedback ul li a.feedback-yes,
+.sys_footer-feedback ul li a.feedback-no{
+	display: block;
+	float:left;
+	padding: 16px 16px 16px 44px;
+}
+
+.sys_footer-feedback ul li a.feedback-yes{
+	background:transparent url(https://www.gateshead.gov.uk/SiteElements/Icons/yes.png) 0 50% no-repeat;
+}
+
+.sys_footer-feedback ul li a.feedback-no{
+	background: transparent url(https://www.gateshead.gov.uk/SiteElements/Icons/no.png) 0 50% no-repeat;
+}
+
+/*.sys_footer-feedback ul li a.feedback-yes {
+	display: block;
+	width: 38px;
+	height: 38px;
+	text-indent: -9999px;
+	background:url(https://www.gateshead.gov.uk/SiteElements/Icons/yes.png);
+	float:left;
+	margin-right: 10px;
+}
+
+.sys_footer-feedback ul li a.feedback-no {
+	display: block;
+	width: 38px;
+	height: 38px;
+	text-indent: -9999px;
+	background:url(https://www.gateshead.gov.uk/SiteElements/Icons/no.png);
+	float:left
+}*/
+
+.sys_footer-feedback ul li a:hover {
+	opacity: 0.75;
+}
+
+#quicklinks {
+	display: none
+}
+
+#copyright {
+	border-top: #00a8e6 8px solid;
+	float: left;
+	width: 100%;
+	padding: 0.5em 0;
+}
+
+#copyright ul {
+	margin: 0;
+	list-style-type: none;
+	float: left;
+}
+
+#copyright ul.listright {
+	float: right
+}
+
+#copyright ul li {
+	display: inline;
+	float: left;
+	margin: 0 20px 0 0;
+	color: #b3b3b3;
+	padding-top: 2px
+}
+
+#copyright ul.listright li a {
+	text-indent: -9999px;
+	display: block;
+	width: 24px;
+	height: 24px;
+}
+
+#copyright ul.listright li:first-child a {
+	background:none;
+}
+
+#copyright ul li a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#copyright ul li a:hover {
+	color: #64B5F6;
+}
+
+#socialmedia {
+	padding: 0 0 20px 20px;
+  	float:right;    
+}
+
+#socialmedia h2{
+	float:left;
+}
+
+#socialmedia h2{
+	display: block;
+	float: left;
+	margin: 12px 12px auto auto;
+}
+
+#socialmedia  ul{
+	clear: both;
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#socialmedia  ul li{
+  float: left;
+  margin: 0;
+  padding: 10px 10px 0 10px;
+}
+
+
+
+.sys_powered-by {
+	font-size: 0.8em;
+	margin-bottom: 10px;
+  clear: both
+}
+
+
+
+/*-----------------------------------------------------------------
+
+    Mini templates
+
+-----------------------------------------------------------------*/
+
+/*     Amended styles January 2014
+---------------------------*/
+a.mini-task-btn {
+	padding: 10px;
+	border: none;
+	background:#8CC14C;
+	color: #fff;
+ font-size: 1.3em
+}
+
+.sys_mini-template {
+	margin-bottom: 2em;
+	clear: left;
+}
+
+.sys_mini-template.contact-us,
+.sys_mini-template.website-alert{
+	background-color: #eee;
+	padding: 20px;
+	clear: left;
+}
+
+.sys_mini-template h2 {
+}
+
+.contact-us address {
+	font-style: normal;
+}
+
+.sys_mini-template.website-alert-red {
+	background-color: #FFF1F0;
+	border: 1px solid #DA314B;
+	padding: 5px 10px 10px;
+}
+
+.sys_mini-template.website-alert-red h2 {
+	color:#DA314B;
+	border-bottom: 1px solid #DA314B;
+}
+
+.sys_mini-template.website-alert-red a.mini-task-btn {
+	padding: 10px;
+	border: none;
+	background:#DA314B;
+	color: #fff;
+}
+
+.sys_mini-template.floated-right {
+	width: 30%;
+	min-width: 250px;
+	background-color: #ececec;
+	padding: 5px 10px 10px;
+	border: 1px solid #c7c7c7;
+	font-size: 0.95em;
+	float: right;
+	margin-left: 3.8%;
+}
+
+.sys_mini-template.floated-right ul {
+	padding-left: 0px;
+	list-style-type: none
+}
+
+.sys_mini-template.website-task {
+	border: 1px solid #242424;
+	padding: 5px 10px 10px;
+}
+
+.sys_mini-template.website-task a.mini-task-btn {
+	padding: 10px;
+	border: none;
+	background:#8CC14C;
+	color: #fff;
+ font-size: 1.3em
+}
+
+.sys_mini-template a.mini-task-btn {
+	padding: 10px;
+	border: none;
+	background:#8CC14C;
+	color: #fff;
+ font-size: 1.3em
+}
+
+a.mini-task-btn:hover {
+	background-color: #242424
+}
+
+/* 	End / Jan 2014
+---------------------------*/
+
+.system_echeader {
+	padding: 0 0 0.4em;
+	/*/*font-family: Georgia, "Times New Roman", Times, serif;*/
+	font-size: 1.4em;
+}
+
+.system_echeader p {
+	margin-bottom: 0;
+	font-weight: 600;
+}
+
+.system_ecbody {
+	margin: 10px 0 0;
+}
+
+.system_ecbody TD {
+	padding: 0;
+	background-color: #fff;
+}
+
+.system_ecbody A {
+	word-wrap: break-word
+}
+
+#system_extracontent .system_contactus  {
+	margin: 0 0 20px 0;
+	width: 200px
+}
+
+#system_content .system_contactus .system_ecbody  {
+	padding-left: 10px;
+}
+
+.system_documentlink,  .system_internallink,  .system_externallink {
+	margin: 0 0 20px 0;
+	width: 200px;
+	position: relative
+}
+
+#system_content .system_documentlink,  #system_content .system_internallink,  #system_content .system_externallink {
+	margin: 0 0 20px;
+	width: 100%;
+	position: relative;
+	padding-bottom: 5px;
+	clear: both;
+}
+
+#system_content .system_documentlink ul,  #system_content .system_internallink ul,  #system_content .system_externallink ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.system_documentlink .system_ecbody UL,  .system_internallink .system_ecbody UL,  .system_externallink .system_ecbody UL {
+	list-style-type: none
+}
+
+.system_documentlink .system_ecbody UL LI,  .system_internallink .system_ecbody UL LI,  .system_externallink .system_ecbody UL LI {
+	padding: 3px 0 3px 14px;
+}
+
+#system_content .system_ecbody ul li {
+	border-bottom: none;
+}
+
+.system_documentlink .system_ecbody UL LI {
+	background: url(https://www.gateshead.gov.uk/images/structure/1001_mini_doc.gif) no-repeat 0 9px;
+	margin: 0 0 4px;
+}
+
+.system_internallink .system_ecbody UL LI,  .system_externallink .system_ecbody UL LI {
+	background: url(https://www.gateshead.gov.uk/images/structure/1001_mini_linkarrow.gif) no-repeat 0 11px;
+}
+
+.wrapper.tasks .fourcol {
+	background-color: #F6F6F6;
+ 	min-height: 225px;
+}
+
+
+
+.wrapper.tasks .sixcol {
+	background-color: #F6F6F6;
+ 	min-height: 50px;
+}
+
+.wrapper.tasks .sixcol p {
+	padding: 1% 3% 0;
+}
+
+.wrapper.split-list .fourcol {
+	float :right;
+	margin-right: 0;
+	background-color: #FFF;
+}
+
+.wrapper.split-list .fourcol h4 {
+	margin:7px 0 26px;
+	font-weight :normal;
+	font-size: 110%;
+}
+
+
+.sys_featurebox_left {
+	width: 30.75%;
+	background: #F6F6F6;
+	float:left;
+	margin-right: 3.8%;
+	min-height: 270px;
+	z-index: 1999;
+	margin-bottom: 1em;
+}
+
+.sys_featurebox_right {
+	width: 30.75%;
+	background: #F6F6F6;
+	float:right;
+	margin: 0;
+	min-height: 270px;
+	z-index: 1999;
+	margin-bottom: 1em;
+}
+
+.sys_featurebox_textarea {
+	width: 90%;
+	margin:auto;
+	z-index: 1999;
+}
+
+.sys_featurebox_wide {
+	width: 65.4%;
+	min-height: 310px;
+	background: #F6F6F6;
+	float:right;
+	margin: 0;
+	z-index: 1999;
+	position: relative;
+  margin-bottom: 1em
+}
+
+.sys_featurebox_left IMG, .sys_featurebox_right IMG {
+	margin:0;
+	z-index: 1999;
+	width: 100%;
+	height: auto
+}
+
+.sys_featurebox_left.icon,
+.sys_featurebox_right.icon{
+	text-align: center
+}
+
+.sys_featurebox_left.icon IMG, .sys_featurebox_right.icon IMG {
+	margin:0;
+	z-index: 1999;
+	width: auto;
+	height: auto;
+ display: inline;
+  margin-top: 15px
+}
+
+.sys_featurebox_textarea H2 {
+	font-size: 1.3em;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+.sys_featurebox_textarea P {
+	margin: 0;
+	padding: 0;
+	z-index: 1999;
+  text-align: left;
+}
+
+.sys_featurebox_wide IMG {
+	z-index: 1999;
+	width: 100%;
+	height: auto
+}
+
+.sys_featurebox_wide_text {
+	background: #252525;
+	padding: 7px;
+	z-index: 1999;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px
+}
+
+.sys_featurebox_wide_text h1 {
+	font-size: 1.2em;
+}
+
+.sys_featurebox_wide_text a {
+	margin-left: 10px;
+	z-index: 1999;
+}
+
+.sys_featurebox_wide_text a:hover {
+	color: #fff;
+}
+
+	.sys_page_break {
+	clear: both;
+}
+
+.sys_page_break p {
+	display: none;
+}
+
+.system_mini_featurewithimage .system_imageleft .system_picture {
+		position: static; 
+  border-bottom-style: none; 
+  border-right-style: none; 
+  margin: 0px 15px 10px 0px; 
+  width: 250px; 
+  border-top-style: none; 
+  background: #f6f6f6; 
+  float: left; 
+  border-left-style: none
+}
+
+.system_mini_featurewithimage .system_imageright .system_picture {
+	position: static; 
+  border-bottom-style: none; 
+  border-right-style: none; 
+  margin: 0px 0 10px 15px; 
+ 	width: 250px; 
+  border-top-style: none; 
+  background: #f6f6f6; 
+  float: right; 
+  border-left-style: none
+}
+
+.system_mini_featurewithimage .system_imageleft .system_text UL {
+	margin: 0 10px
+}
+
+.system_mini_featurewithimage .system_picture .system_caption {
+	font-size: 0.9em;
+	margin: 7px;
+	color: #2b2b2b;
+}
+
+.system_mini_featurewithimage .system_picture .system_caption A:link,  .system_mini_featurewithimage .system_picture .system_caption A:active,  .system_mini_featurewithimage .system_picture .system_caption A:visited {
+	font-weight: 700;
+	margin: 0;
+	color: #2b2b2b
+}
+
+#system_content .system_contactus {
+	float: left;
+	width: 100%;
+	background: #f6f6f6;
+	text-decoration: none;
+  margin-bottom: 1em
+}
+
+#system_content .system_contactus .system_echeader {
+	padding: 10px 0 10px 10px;
+	width: auto;
+	height: 29px;
+	/*/*font-family: Georgia, "Times New Roman", Times, serif;*/
+	font-size: 1.5em
+}
+
+.sys_news-report {
+	width: 100%;
+	clear: both;
+	float: left;
+	border-bottom: 1px dashed #2b2b2b;
+	margin-bottom: 1em
+}
+
+.sys_news-report .btn {
+	font-size: 1.1em;
+    padding: 7px;
+}
+
+.sys_news-report h3 {
+	margin-bottom: 0px;
+}
+
+
+.sys_news-report .date {
+	font-size: 0.9em;
+}
+
+/*---service homepage boxes --*/
+.sys_ServiceBox {
+
+background: #F6F6F6;
+min-height: 255px;
+z-index: 1999;
+  padding:15px;
+
+}
+
+.sys_ServiceBox img {
+margin:auto;
+text-align:center;
+width:34%;
+  height:34%;
+  clear:both;
+  margin-top:15px;
+
+}
+
+/*-----------------------------------------------------------------
+
+    CMS Controls
+
+-----------------------------------------------------------------*/
+
+/* Image gallery */
+	
+.sys_imageslideshowgallery-control .sys_imageslideshowgallery-fullimagecontainer IMG {
+	display: block;
+	text-align:center;
+	margin: auto;
+}
+
+.sys_imageslideshowgallery-control .sys_imageslideshowgallery-fullimagecontainer {
+	margin: 0 auto;
+	max-width: 98%;
+	text-align:center;
+}
+
+.sys_imageslideshowgallery-fullimagecontainer {
+	margin: auto;
+}
+
+/*-----------------------------------------------------------------
+
+    Alert template
+
+-----------------------------------------------------------------*/
+
+.sys_websitealert {
+	padding: 10px;
+	 margin-bottom: 10px;
+}
+
+.sys_websitealert p:last-child, .sys_websitealert h2 {
+margin-bottom:0.5em;
+}
+
+.alert-grey {
+background-color: #F4F4F4;
+border: 1px dotted #242424;
+}
+
+.alert-green {
+background-color: #f6fbf4;
+border: 1px dotted #70c77f;
+}
+
+.alert-green h2 {
+color:#35a547;
+}
+
+.alert-yellow {background-color: #fffff9;border: 1px solid #e4b833;height: 1%;overflow: auto;padding: 8px 8px 0px 8px;}
+
+.alert-yellow h2 {
+color:#dda600;
+}
+
+.alert-orange {
+background-color: #fff6ee ;
+border: 1px dotted #ff5a00; 
+}
+
+.alert-orange h2 {
+color:#e86506;
+}
+
+.alert-red {
+background-color: #fdf5f6;
+border: 1px dotted #f11231; 
+}
+
+.alert-red h2 {
+color:#e91616;
+}
+
+
+
+/*-----------------------------------------------------------------
+
+    mini-templates-2012 - creates boxes in columns (2 or 3)
+
+-----------------------------------------------------------------*/
+
+.darkbg {
+	background-color: #2f2f2f;
+	color: #f3f3f3;
+}
+
+.darkbg a {
+	color: #f3f3f3;
+}
+
+.lightbg {
+	background-color: #f3f3f3;
+	color: #2f2f2f;
+  	margin-bottom: 25px;
+}
+
+.redbg {
+	background-color: #FFE7CE;
+	color: #2f2f2f;
+  	margin-bottom: 25px;
+}
+
+.system_minitemplate {
+    padding: 8px;
+    min-height: 155px;
+}
+
+.system_minitemplate_alert {
+    padding: 8px;
+}
+
+.system_minitemplate a.btn_more, 
+a.btn_more, 
+a:active.btn_more, 
+a:link.btn_more, 
+a:visited.btn_more {	
+	padding: 6px;
+	background:#74c7f9;
+	color: #fff;
+	font-weight: 700;
+}
+
+.system_minitemplate a:hover.btn_more, 
+a:hover.btn_more  {
+	text-decoration: none;
+}
+
+.system_minitemplate a.btn_action,
+.system_minitemplate a.btn_action_lg,  
+a.btn_action, 
+a.btn_action_lg, 
+a:active.btn_action,
+a:active.btn_action_lg, 
+a:link.btn_action, 
+a:link.btn_action_lg, 
+a:visited.btn_action,
+a:visited.btn_action_lg {	
+	background:#43A047;
+	color: #fff;
+	font-size: 1.1em;
+	display: inline-block;
+	margin-bottom: 5px;
+    padding: 6px 12px;
+    border-radius: 2px;
+	margin-bottom :5px;
+	border: 2px solid #43A047;
+}
+
+.system_minitemplate a:hover.btn_action_lg, 
+.system_minitemplate a:hover.btn_action, 
+a:hover.btn_action_lg,
+a:hover.btn_action  {
+	text-decoration: none;
+	background: #1B5E20;
+	border: 2px solid #1B5E20;
+}
+
+.btn_action_secondary,
+a.btn_action_secondary{
+	background:#fff;
+	color: #333;
+	font-size: 1.1em;
+	display: inline-block;
+	margin-bottom: 5px;
+	padding: 6px 12px;
+	border-radius: 2px;
+	margin-bottom :5px;
+	border: 2px solid #9E9E9E;
+}
+
+.btn_action_secondary:hover,
+a.btn_action_secondary:hover{
+	background:#333;
+	border: 2px solid #333;
+	color:#fff;
+	text-decoration: none;
+}
+
+.btn_right{
+	float:right;
+}
+
+.system_minitemplate_title {
+    border-bottom: 1px solid #2f2f2f;
+    padding-bottom: 10px;
+  	display: block;
+}
+
+.wrapper {
+    width: 100%;
+	margin: 0 auto;
+}
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+	margin-right: 2.8%;
+	min-height: 1px;
+	margin-bottom: 1em;
+	float: left;
+}
+
+.wrapper .onecol {
+	width: 4.85%;
+}
+
+.wrapper .twocol {
+	width: 13.45%;
+}
+
+.wrapper .threecol {
+	width: 22.05%;
+}
+
+.wrapper .fourcol {
+	width: 28.75%;
+}
+
+.wrapper .fivecol {
+	width: 39.45%;
+}
+
+.wrapper .sixcol {
+	width: 48%;
+}
+
+.wrapper .sevencol {
+	width: 56.75%;
+}
+
+.wrapper .eightcol {
+	width: 65.4%;
+}
+
+.wrapper .ninecol {
+	width: 74.05%;
+}
+
+.wrapper .tencol {
+	width: 82.7%;
+}
+
+.wrapper .elevencol {
+	width: 91.35%;
+}
+
+.wrapper .twelvecol {
+	width: 100%;
+	/* float: left; */
+}
+
+#system_extracontent .wrapper .twelvecol {
+	margin: 0 0 20px 10px;
+	width: 200px
+}
+
+.last {
+	margin-right: 0;
+
+}
+
+.sys_task-document-list {
+	float: left;
+	padding-left: 70px;
+	background: url(http://www.gateshead.gov.uk/SiteElements/Icons/DocumentA50x50.png) no-repeat 0 20px;
+}
+
+.sys_task-document-description {
+	margin: 1em 0;
+}
+
+/*-----------------------------------------------------------------
+
+    Styles for ICT applications
+
+-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------
+
+    Councillors
+
+-----------------------------------------------------------------*/
+
+.cllr_details{
+	overflow:hidden; 
+	float:left; 
+	width: 30.75%;
+	margin-right:2.5%;
+	margin-top: 0.5em;
+	height: 450px;
+}
+
+.cllr_details h3 { 
+	font-size: 1em; 
+	margin: 1em 0;
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom: 1px solid #2b2b2b
+}
+
+.cllr_details img{ 
+	margin:auto; 
+	border: 1px solid #2b2b2b !important
+}
+
+#system_breadcrumb {
+	border-bottom: #D3D3D3 1px solid;
+	padding: 8px 0;
+	font-size: 0.9em;
+	color: #D3D3D3;
+	margin-top: 13px;
+	position:absolute;
+	left: 25.85%;
+	width: 74.05%;
+	z-index: 999
+}
+
+#system_breadcrumb p {
+	margin: 0;
+	padding: 0;
+}
+
+#system_breadcrumb p strong {
+	display: none;
+}
+
+#system_contentarea form #title  {
+	margin-top: 2.7em;
+	margin-bottom: 1.2em;
+}
+
+#system_contentarea form #title h1 strong {
+	font-weight: 300;
+}
+
+.clear {
+	clear: both;
+}
+
+#system_contentarea form #system_content p {
+	clear: both;
+}
+
+.margin_smalltop {
+	clear: both
+}
+
+#system_contentarea form #system_content div div.cllr_details2 {
+    overflow:hidden; 
+    float:left; 
+    width: 55% !important; 
+    margin-right:8px;  
+}
+
+.contactlabel { 
+	width: 100px;
+	display: block;
+	float:left;
+}
+
+/*-----------------------------------------------------------------
+
+    Not sure what application this is for - BN 13/11/2012
+
+-----------------------------------------------------------------*/
+
+.address table { 
+	width: 97%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: transparent;
+	border-bottom: 1px solid #ddd;
+	overflow: auto
+}
+
+.address caption {
+  position: absolute;
+  left: -999em;
+}
+
+.address table th {
+	font-weight: bold;
+}
+
+.address th,
+.address td {
+	padding: 8px;
+	line-height: 18px;
+	text-align: left;
+	vertical-align: top;
+	border-top: 1px solid #ddd;
+	background: none
+}
+
+.address2 table { 
+	width: 97%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: transparent;
+	border-bottom: 1px solid #ddd;
+	overflow: auto
+}
+
+.address2 th,
+.address2 td {
+	padding: 8px;
+	line-height: 18px;
+	text-align: left;
+	vertical-align: top;
+	border-top: 1px solid #ddd;
+}
+
+/*-----------------------------------------------------------------
+
+    Not sure what template this is for - BN 13/11/2012
+
+-----------------------------------------------------------------*/
+
+
+div.caption-right{
+	background:#f3f3f3;
+	border:1px solid #ddd;
+	padding:3px;
+	float: right;
+	margin: 5px 0 10px 10px;
+}
+	
+div.caption-right img{
+	display:block;
+	padding:0;
+	margin:0;
+}
+	
+div.caption-right span{
+	display:block;
+	margin-top:3px;
+	font-size:0.8em;
+	color:#666;
+	padding:0px 5px;
+}
+
+div.caption-left{
+	background:#f3f3f3;
+	border:1px solid #ddd;
+	padding:3px;
+	float: left;
+	margin: 5px 10px 10px 0;
+}
+	
+div.caption-left img{
+	display:block;
+	padding:0;
+	margin:0;
+}
+
+div.caption-left span{
+	display:block;
+	margin-top:3px;
+	font-size:0.8em;
+	color:#666;
+	padding:0px 5px;
+}
+
+/*-----------------------------------------------------------------
+
+    www.gateshead.gov.uk/fostering - all needs rewrite for new site design
+
+-----------------------------------------------------------------*/
+
+html,body        {height:100%;}
+
+#sys_fostervideo        {position:relative; margin-bottom: 1em}
+#sys_fostervideo  .ratio {display:block;width:100%;height:auto;}
+#sys_fostervideo  iframe {position:absolute;top:0;left:0;width:100%; height:100%;}
+
+#sys_fosterpictures {
+	width: 200px;
+	float:right
+}
+
+#sys_fosterpictures UL {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+a.enquiry { 
+	display:block; 
+	text-indent: -9999px; 
+	background:url(http://www.gateshead.gov.uk/images/Care/Fostering/MakeEnquiry.jpg); 
+	width: 200px; 
+	height: 203px; 
+	margin-bottom: 10px;
+}
+
+a.types { 
+	display:block; 
+	text-indent: -9999px; 
+	background:url(http://www.gateshead.gov.uk/images/Care/Fostering/TypesOfCare.jpg); 
+	width: 200px; 
+	height: 192px;
+	margin-bottom: 10px;
+}
+
+/*-----------------------------------------------------------------
+
+    New mini - tasks
+
+-----------------------------------------------------------------*/
+
+.sys_task {
+	background: #f6f6f6;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+.sys_task h2 {
+	/*/*font-family: Georgia, "Times New Roman", Times, serif;*/
+	letter-spacing: normal;
+	font-size: 1.4em
+}
+
+.sys_task a.task-btn {
+	background:#037ecb;
+	color: #FFF;
+	display: inline-block;
+    font-size: 1.1em;
+    padding: 6px 12px;    
+	border:none;
+	margin:5px;
+	cursor:pointer;
+	width: auto;
+	margin:auto;
+	text-align: center;
+	border-radius: 2px;
+	transition: all 0.5s ease 0s;
+}
+
+a.task-btn:hover{
+	background:#00a8e6;
+	color: #FFF;
+	text-decoration: none;
+}
+
+/*-----------------------------------------------------------------
+
+    Listing controls
+
+-----------------------------------------------------------------*/
+
+/*===================A-Z=====================*/
+
+
+ .sys_atoz-control {
+	background: none repeat scroll 0 0 transparent;
+	clear: both;
+	font-size: 1em;
+	margin: 0 0 10px;
+	padding: 0 0 5px;
+	width: 100%;
+}
+ .sys_atoz-control UL {
+	background: none repeat scroll 0 0 transparent;
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 !important;
+	
+}
+ .sys_atoz-control UL:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.sys_atoz-control UL LI {
+	color: #333;
+	float: left;
+	list-style: none;
+	margin:  5px;
+	padding: 0;
+	background:#f2f2f2;
+	font-size:1.5em;
+	height:47px;
+	width:47px;
+	text-align:center;
+	vertical-align:middle;
+		/*/*font-family: Georgia, "Times New Roman", Times, serif;*/
+	display:block;
+	position:relative;
+}
+ .sys_atoz-control UL LI.sys_0to9 {
+	white-space: nowrap;
+	width: 33px;
+}
+.sys_atoz-control UL LI A {
+	color: #333;
+	font-weight: normal;
+	display:block;
+	text-decoration: none;
+	position:absolute;
+	height:100%;
+	width:47px;
+	padding-top:7px;
+  	left:0;
+
+  
+}
+ .sys_atoz-control UL LI SPAN {
+	color: #333333;
+	display: block;
+	float: left;
+	padding: 0.1em 6px;
+	position: relative;
+	text-decoration: none;
+
+}
+.sys_atoz-control UL LI A:hover {
+	background: none repeat scroll 0 0 #00a8e6;
+	color: #ffffff;
+	text-decoration: none;
+  display:block;
+}
+.sys_atoz-control UL LI.sys_noresults {
+    display: none;
+}
+
+.sys_atoz-control UL LI.sys_noresults:hover {
+}
+ .sys_atoz-control UL LI.sys_noresults SPAN {
+	color: #CCCCCC;
+	cursor: default;
+	font-weight: normal;
+	margin: 5px 0 0 10px;
+}
+.sys_atoz-control UL LI.sys_selected {
+}
+.sys_atoz-control UL LI.sys_selected A {
+	background: none repeat scroll 0 0 #595959;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.sys_atoz-control UL LI.sys_selected A:hover {
+	background: none repeat scroll 0 0 #595959;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+ DIV.sys_atoz-control-currentletter {
+	clear: both;
+	color: #3E74D7;
+	font-size: 2.6em;
+	font-weight: bold;
+	margin: 0 0 15px;
+	padding: 0 0 0 5px;
+}
+DIV.sys_atoz-control-currentletter BIG {
+	display: block;
+	line-height: 1em;
+}
+
+#AZListing_List .sys_flickrpager { width: 100%;}
+
+#AZListing_List .sys_flickrpager .sys_paginginfo {
+	display: none
+}
+#AZListing_List .sys_flickrpager .sys_navigation {
+	background: none repeat scroll 0 0 transparent;
+	border-color: -moz-use-text-color;
+	border-style: none;
+	border-width: 0;
+ 	float: right;
+	font-weight: 300;
+	margin: auto;
+	padding: 0;
+	text-align: center
+}
+
+
+#AZListing_List  .sys_flickrpager {
+	font-size:1.5em;
+	margin-top: 1em;
+  /*/*font-family: Georgia, "Times New Roman", Times, serif;*/
+}
+
+#AZListing_List .sys_flickrpager .sys_page a {
+	padding: 5px 17px;
+	display: block;
+	margin: 5px;
+	background-color: #f2f2f2;
+	color: #333333;
+	width: 10px;
+	float: left;
+	text-decoration: none
+}
+
+#AZListing_List .sys_flickrpager .sys_page a:hover {
+	background-color: #65a10d;
+	color: #fff;
+}
+
+
+#AZListing_List  .sys_flickrpager .sys_ellipsis {
+	padding: 5px 17px;
+	display: block;
+	margin: 5px;
+	background-color: #f2f2f2;
+	color: #1d1d1d;
+	width: 10px;
+	float: left;
+}
+#AZListing_List .sys_flickrpager span.sys_selected {
+	color: #fff;
+	background-color: #595959;
+	display: block;
+	padding: 5px 17px;
+	margin: 5px;
+	width: 10px;
+	float: left;
+}
+#AZListing_List .sys_flickrpager .sys_navigationprevious, .sys_navigationnext {
+	float: left;
+	padding: 5px 17px;
+	margin: 5px;
+	background-color: #fff;
+}
+#AZListing_List  .sys_flickrpager .sys_navigationnext {
+	padding: 5px 0 5px 17px;
+}
+
+
+#AZListing_List  ul.azlisting li:nth-child(even) {
+ background-color: #f9f9f9;
+}
+#AZListing_List  ul.azlisting li:hover {
+	background-color: #f5f5f5;
+}
+#AZListing_List  h3.sys_subitem-heading {
+	margin-bottom:0;
+	padding:10px 0;
+}
+#AZListing_List  h3.sys_subitem-heading a {
+	position:absolute;
+	width:100%;
+	padding:10px 0;
+	display:block;
+	top:0;
+	font-family: Arial, Helvetica, sans-serif
+}
+#AZListing_List  .sys_subitem {
+	padding: 15px;
+	margin-top:0;
+	position:relative;
+	border-bottom: none;
+}
+#AZListing_List .sys_subitem:hover {
+	background-color: #f5f5f5;
+}
+#AZListing_List .sys_subalternatingitem {
+	background-color: #f9f9f9;
+}
+#AZListing_List  dt.sys_generic_list-description {
+	display:none;
+}
+#AZListing_List  .sys_subitem dd.sys_generic_list-description {
+	display: none
+}
+#AZListing_List  .sys_subitem:hover dd.sys_generic_list-description {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 180px;
+	padding: 7px;
+	margin: 0 6px 0 0;
+	z-index: 100;
+	background: #fff;
+	border: 1px solid #d3d3d3;
+	color: #333;
+}
+
+.sys_relateditemslisting-control .sys_subitem{
+	margin-bottom: 1em
+}
+
+.sys_relateditemslisting-control dt.sys_relateditemslisting-description {
+	display: none;
+}
+
+/*-------------*/
+
+
+	
+}
+
+/* Media Gallery Control - horizontal */
+
+.sys_horizontal-gallery .sys_mediagallery-uploaded, .sys_horizontal-gallery .sys_mediagallery-control H3.sys_subitem-heading {
+	display: none
+}
+
+.sys_horizontal-gallery .sys_subitem {
+	clear: none !important;
+	float:left;
+	border-bottom: none;
+	padding: 5px;
+}
+
+.sys_horizontal-gallery .sys_subitem .sys_thumbnail {
+	margin-left: 0px;
+	margin-top: 0px;
+	float: none;
+}
+
+.sys_itemslist DIV[style] {
+	/* width: auto !important; */
+	/* height: auto !important; */
+}
+
+.clsFooter
+{
+	display:none;
+}
+
+#MainTable TABLE {
+	table-layout: auto;
+}
+
+
+
+/*-----------------------------------------------------------------
+
+    New mini - MAPS
+
+-----------------------------------------------------------------*/
+
+
+
+
+.sys_fmap {
+	float:right;
+	width:54.1%;
+	min-height:400px;
+	margin-bottom:2%;
+	margin-left:4%;
+}
+
+#LME_maplinks
+{font-size:11px;}
+
+#LME_largerMap {
+  margin-right:15px;}
+
+ 
+
+
+/*-----------------------------------------------------------------
+
+   existing stuff
+
+-----------------------------------------------------------------*/
+
+fieldset {
+	border: #DDD 1px solid;
+	padding: 0.5em;
+	margin-bottom: 1em;
+}
+
+fieldset td {
+  border:none;
+  
+}
+
+
+fieldset  tbody tr:nth-child(2n) td, tbody tr:nth-child(2n) th {
+    background:none;
+}
+
+fieldset td span {
+  clear:both;
+  font-size:0.8em;
+  color:red;
+  display:block;
+  margin-left: 5px;
+  
+}
+
+label {
+	clear: left;
+	padding: 5px;
+}
+
+input[type='text'], textarea, select {
+	padding: 8px;
+	width:273px;
+	background-color:#fff;
+	border:1px solid #ccc;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition:border linear .2s, box-shadow linear .2s;
+	-moz-transition:border linear .2s, box-shadow linear .2s;
+	-o-transition:border linear .2s, box-shadow linear .2s;
+	transition:border linear .2s, box-shadow linear .2s;
+	margin-bottom: 1em;
+}
+
+input:focus, textarea:focus, select:focus {
+	border-color:rgba(82, 168, 236, 0.8);
+	outline:0;
+	/*outline:thin dotted \9;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(82, 168, 236, .6);
+	-moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(82, 168, 236, .6);
+	box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(82, 168, 236, .6)*/
+}
+
+input[type='radio']{
+  width:auto;
+  float:left;
+  	border:none;
+}
+
+input[type='checkbox'] {
+	border:none;
+	background:none;
+	width: auto;
+}
+
+input[type='checkbox']:hover{
+  background:none;
+}
+
+input[type='submit']:hover {
+	cursor: pointer;
+	color: #FFF;
+}
+
+input[type='submit']:active {
+	padding: 5px;
+}
+
+#councillors input.submitform {
+	font-weight: 300;
+	background: url(https://www.gateshead.gov.uk/images/structure/1001_form_submitbg.gif) repeat-x left top;
+	width: auto;
+	color: #ccc;
+	border: none;
+}
+
+#system_content .sys_cms-form-control ul.sys_cms-form-body li.sys_sectionbreak {
+	padding: 0
+}
+
+#system_content .sys_cms-form-control ul.sys_cms-form-body li.sys_cms-form-item {
+	padding-left: 0
+}
+
+#system_content .sys_cms-form-control ul.sys_cms-form-body {padding: 0; margin: 0;}
+
+#system_content .sys_cms-form-control ul.sys_cms-form-body li.sys_radio label {
+    clear: none;
+    padding: 5px;
+}
+
+#system_content .sys_cms-form-control ul.sys_cms-form-body li.sys_radio input {
+	border: none;
+	background: none;
+}
+
+#system_content .sys_cms-form-control ul.sys_cms-form-body input, #system_content .sys_cms-form-control ul.sys_cms-form-body textarea, #system_content .sys_cms-form-control ul.sys_cms-form-body select {
+	padding: 5px;
+	font-size: 1.2em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type='submit'], input.submitform, .sys_form-submit {
+	background:#65a10d;
+	color:#FFFFFF;
+	font-size:1.4em;
+	text-align:center;
+	/*/*font-family: Georgia, "Times New Roman", Times, serif;*/
+	height: 40px;
+	border:0;
+	width: auto;
+  line-height:1em;
+}
+
+input[type='reset'] {
+	background:#ececef;
+	color:#9f9fa0;
+	font-size:1.4em;
+	text-align:center;
+	/*/*font-family: Georgia, "Times New Roman", Times, serif;*/
+	height: 40px;
+	border:0;
+	width: auto;
+}
+
+input[type='submit']:hover, input.submitform:hover, .sys_form-submit:hover {
+	background-color: #00a8e6;
+	cursor: pointer;
+	transition: all 0.5s ease 0s;
+}
+
+input[type='reset']:hover {
+	background-color: #dbdbde;
+	cursor: pointer;
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+.sys_form-submit, .sys_cms-form-item button {
+	 border: medium none;
+    color: #FFFFFF;
+    margin-right: 10px;
+    padding: 5px;
+    width: auto;
+}
+
+
+ 
+
+
+/*======== BASE FORMS ===== */
+label {float: left;
+width: 100%;
+padding-right: 3%;
+display:inline-block;}
+
+input[type="text"], textarea, select {
+padding: 2px 2px;
+border:  #CCCCCC solid 1px;width: 65%;
+font-size: 1.1em;
+color: #2b2b2b;
+margin-bottom:2%;
+display:inline-block;
+font-weight:lighter;
+/*/*font-family: Georgia, "Times New Roman", Times, serif;*/}
+
+input[type="text"]:hover, textarea:hover, select:hover {
+border-color:#999999;
+
+}
+
+input[type="text"]:focus, textarea:focus, select:focus {
+border-color:#FFCC00;
+}
+
+
+input, select {clear:both;}
+input[type="text"], select {height: 35px;}
+
+
+textarea {
+height: 8em;
+}
+
+fieldset {
+clear:both;
+display:block;
+}
+
+fieldset label {
+cursor: pointer;
+float: left;
+width: 25%;
+
+padding: .2em 0;
+margin-top: -2px;
+margin-bottom:2%;
+display: block;
+color: #363636;}
+
+
+/*=================BUTTONS======================*/
+
+.btn, input[type="submit"], input[type="button"], button[type="submit"]{
+ display: inline-block;
+    font-size: 1.1em;
+    padding: 6px 12px;
+	border:none;
+	margin:5px 5px 25px 0px;
+    border-radius: 2px;
+}
+
+
+.btn a:hover {
+text-decoration:none;
+
+}
+/*.back-btn, .task-btn, .danger-btn, .caution-btn, .more-btn, .forward-btn  {
+    	cursor:pointer;
+  }*/
+
+button[type="submit"] , input[type="submit"] {/* float:right; *//* margin-right:10%; */}
+
+.back-btn {
+background:#e9e9e9;
+color:#2b2b2b;
+}
+.back-btn:hover {
+background:#dddcdc;
+}
+.back-btn a {
+ color:#2b2b2b;}
+
+.task-btn, input[type="submit"], button[type="submit"]{
+background:#037ecb;
+	color: #FFFFFF;}
+
+.task-btn:hover {
+ background: #00a8e6;
+}
+
+.task-btn a, .more-btn a, .forward-btn a {
+color: #FFFFFF;
+}
+
+.inactive-btn{
+background:#bebebe;
+	color: #FFFFFF;
+ cursor: default !important;}
+
+.inactive-btn a{
+color:#868585;
+}
+
+.danger-btn{
+background:#bf442b;
+	color: #FFFFFF;
+}
+
+.danger-btn:hover {
+ background:#b02c12;
+}
+
+.danger-btn a {
+  color: #FFFFFF;
+}
+
+.caution-btn{
+background:#ffe505;
+color:#767676}
+
+.caution-btn:hover {
+background:#f0d919;
+}
+
+.caution-btn a{
+color:#767676}
+
+.more-btn{
+background:#1293e4;
+	color: #FFFFFF;}
+
+.more-btn:hover {
+background:#0c88d6;
+}
+
+.forward-btn{
+background:#5f6162;
+	color: #FFFFFF;
+}
+
+.forward-btn:hover {
+background:#505556;
+}
+
+dl dt.sys_generic_list-description {display:none;}
+
+
+.sys_task_desc{
+	background:#f1f1f1;
+	padding:20px;
+	margin-bottom:4%;
+	display:block;
+	clear:both;
+}
+
+.sys_task_desc p {
+margin-left: 0.5em;
+}
+
+.sys_keyinfo{
+	background:#CC0066;
+ clear: both;
+ color: #FFFFFF;
+ display: block;
+ font-family: Georgia,"Times New Roman",Times,serif;
+ font-size: 1.8em;
+ margin-bottom: 2%;
+ padding: 1%;
+ text-align: center;
+ width: 100%;
+  
+}
+
+/*-----------------------------------------------------------------
+
+    ICT Application - Online form
+
+-----------------------------------------------------------------*/
+#ctl00_mainContent_MainPart table td {border: none; width: 50% }
+#ctl00_mainContent_MainPart table td SELECT {width: 100% }
+
+
+/*-----------------------------------------------------------------
+
+    ICT Application - Direct Debit form
+
+-----------------------------------------------------------------*/
+
+#Div1 #system_contentarea #system_contentwrapper #system_content input[type='radio'] {
+	border: none;
+	background: none;
+	width:auto;
+}
+
+#Div1 #system_contentarea #system_contentwrapper #system_content input[type='submit'] {
+	float: left;
+ width: 100% !important;
+ background: #ddd;
+ color: #2b2b2b
+}
+
+/*-----------------------------------------------------------------
+
+   wide-template container for forms
+
+-----------------------------------------------------------------*/
+
+
+.sys-widewrap {
+width:65%;
+}
+
+.sys_cms-form-confirmation-content {
+	text-align:left!important;
+	padding-left: 0;
+	padding-right: 0;
+	/* font-size: 1.4em; */
+	/* background-color: #F4F4F4; */
+	margin-bottom: 20px;
+}
+
+.sys_cms-form-confirmation-content p {
+	/* font-size:78%; */
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+/*======GALLERY=====*/
+
+.sys_mediagallery-control {
+clear:both;
+}
+  
+.sys_mediagallery-control .sys_mediagallery-uploaded, .sys_mediagallery-control H3.sys_subitem-heading {
+	display: none
+}
+
+.sys_mediagallery-control .sys_subitem {
+	clear: none;
+	float:left;
+	border-bottom: none;
+	padding: 5px;
+}
+
+.sys_mediagallery-control .sys_subitem .sys_thumbnail {
+	margin-left: 0px;
+	margin-top: 0px;
+	float: none;
+}
+
+.sys_mediagallery-control .sys_itemslist DIV[style] {
+	width: auto !important; 
+	height: auto !important;
+}
+
+.lscb-training .sys_subitem {
+	padding: 15px 10px;
+	background-color: #f1f1f1;
+	margin-bottom: 0.7em;
+	
+}
+
+.lscb-training .sys_subalternatingitem {
+	background: #fff
+}
+
+.lscb-training h2 {
+	border-bottom: 1px solid #2b2b2b;
+	padding-bottom: 10px;
+	margin-bottom: none;
+}
+
+.lscb-training h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: 300 !important;
+	margin-bottom: 0.5em;
+}
+
+.lscb-training .sys_generic_list-description{
+	font-size: 1em;
+}
+
+
+/* 
+		CLEAR CONTENT
+		breaks content - for example after aleft handed image mini-template
+
+*/
+
+.content-clear {
+		clear: both;
+}
+
+
+/* two-column plain - mini-template
+----------------------------------- */
+
+.sys_plain-col-one,
+.sys_plain-col-two {
+		float: left;
+  height: auto;
+}
+
+.sys_plain-col-one {
+  width: 47.5%;
+  margin-right: 5%;
+}
+
+.sys_plain-col-two {
+  width: 47.5%;
+}
+
+
+
+/* Clearfix - force an element to automatically clear its children
+------------------------------------------------------------------- */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+
+/* 
+	What are these for?
+	================================================== 
+	
+	*/
+
+.image-banner img {
+	width: 100%;
+	height: auto
+}
+
+.responsive-image img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	margin-bottom: 1em;
+}
+
+/* Form styles 2014 */
+.sys_cms-form-control input[type="text"] {
+	/* padding:5%; */
+}
+
+.sys_small{
+	width:auto!important;
+}
+
+.sys_sidebyside{
+	margin: 0 0 1em 0!important;
+}
+ 
+.sys_cms-form-control ul.sys_cms-form-body li div label,
+.sys_cms-form-control ul.sys_cms-form-body li .sys_fieldlabel,
+.sys_cms-form-control ul.sys_cms-form-body li.sys_sectionbreak .sys_sectionbreak-text {
+	font-weight:bold!important;
+	display: block!important;
+	float:none!important;
+	margin:0!important;
+	padding:8px 4px 8px 0;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_sectionbreak .sys_sectionbreak-header,
+.sys_cms-form-control ul.sys_cms-form-body li .sys_legend {
+	/* font-size: 1.4em!important; */
+	font-weight: normal!important;
+	margin-bottom: 0.5em
+}
+#system_content .sys_cms-form-control ul.sys_cms-form-body li.sys_radio input {
+	margin-top: 10px;
+	height: 13px!important;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_sectionbreak .sys_sectionbreak-header {
+	margin: 1em 0 0.5em 0!important;
+	display:block;
+	font-weight: 700!important;
+}
+.sys_cms-form-item sys_buttons,
+.sys_form-submit, .sys_cms-form-item button {
+	/* font-family: Helvetica, Arial, sans-serif; */
+	background: none repeat scroll 0 0 #037ecb;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	margin-bottom: 5px;
+	padding: 8px 16px;
+	font-size:1.4em;
+}
+
+#system_contentarea #system_contentwrapper #system_content .sys_choices_other.sys_boxclearer input[type="text"] {
+	width: 46%;
+	height: 35px!important;
+	padding: 5px!important;
+	border: 1px solid #ccc;
+}
+.sys_cms-form-control input.sys_medium {
+	width: 46%!important;
+}
+.sys_cms-form-control textarea.sys_small {
+	width: 97%!important;
+}
+#system_content ul.sys_cms-form-validationsummary {
+	color :red;
+	margin-left: 0;
+	padding-left :15px;
+	margin-bottom :15px;
+}
+#system_content .sys_cms-form-control ul li {
+	list-style:disc;
+	list-style-position: outside;
+	margin-bottom :5px;
+}
+#system_content .sys_cms-form-control ul.sys_cms-form-body li INPUT[type="text"], 
+#system_content .sys_cms-form-control ul.sys_cms-form-body li select, 
+#system_content .sys_cms-form-control ul.sys_cms-form-body li.sys_multiline textarea {
+	/*font-family: Helvetica, Arial, sans-serif!important;*/
+	font-size: 1.2em!important;
+	font-weight :normal;
+}
+.sys_cms-form-control input[type="checkbox"] {
+	float: left!important;
+	clear: none!important;
+	border: none!important;
+	margin-top: 14px!important;
+	margin-right: 10px!important;
+	padding: 0!important;
+}
+.sys_cms-form-control input[type="checkbox"] + label {
+	float: left!important;
+	clear: none!important;
+}
+
+
+/*-----------------------------------------------------------------
+
+   Missed bins
+
+-----------------------------------------------------------------*/
+
+#formpagelist_0-1081631 li.sys_cms-form-item.sys_pagebreak,
+#formpagelist_1-1081631 li.sys_cms-form-item.sys_buttons,
+#formpagelist_1-1081631 li.sys_cms-form-item.sys_pagebreak{
+	float: left;
+	display: block;
+	width: 48%;
+	margin-right: 1%;
+	padding-top:0;
+}
+
+#formpagelist_0-1081631 li.sys_cms-form-item.sys_pagebreak button,
+#formpagelist_1-1081631 li.sys_cms-form-item.sys_buttons button,
+#formpagelist_1-1081631 li.sys_cms-form-item.sys_pagebreak button{
+	width: 100%;
+	height: 2.5em;
+}
+
+@media handheld, only screen and (max-width: 600px) {
+
+	#formpagelist_0-1081631 li.sys_cms-form-item.sys_pagebreak,
+	#formpagelist_1-1081631 li.sys_cms-form-item.sys_buttons,
+	#formpagelist_1-1081631 li.sys_cms-form-item.sys_pagebreak{
+		float: none!important;
+		width:100%!important;
+	}
+
+	#formpagelist_0-1081631 li.sys_cms-form-item.sys_pagebreak button,
+	#formpagelist_1-1081631 li.sys_cms-form-item.sys_buttons button,
+	#formpagelist_1-1081631 li.sys_cms-form-item.sys_pagebreak button{
+		width:100%!important;
+	}
+}
+
+/*-----------------------------------------------------------------
+
+   Bin collection dates
+
+-----------------------------------------------------------------*/
+
+/* Temp CSS */
+#BinChecker_lblHouseNumber,
+#BinChecker_txtHouseNumber{
+	display: none; /* Hides house name or number */
+}
+
+.NextCollection{
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	padding: 20px;
+	margin: 0 0 20px 0;
+	font-size: 1.3em;
+}
+
+.NextCollection strong{
+	display: block;
+	font-size: 4rem;
+}
+
+.Householdwaste{
+	background-color: #2E7D32;
+}
+
+.Recycling{
+	background-color: #01579B;
+}
+
+.RecyclingAndGarden,
+.Gardenwaste{
+	background: #1B5E20 url('/images/bg/bg-recyclingandgarden.png') 50% 50% no-repeat;
+}
+
+.HouseholdAndGarden{
+	background: #2E7D32 url('/images/bg/bg-householdandgarden.png') 50% 50% no-repeat;}
+
+@media handheld, only screen and (max-width: 600px) {
+	
+	#system_contentarea #title,
+	#system_contentarea #system_branding{
+		padding: 0 10px!important;
+	}
+
+	#BinChecker_txtHouseNumber,
+	#BinChecker_txtPostcode,
+	#BinChecker_lstResults{
+		width: 100%!important;
+	}
+
+	.NextCollection{
+		font-size: 1em;
+	}
+
+	.NextCollection strong{
+		display: block;
+		font-size: 2.2rem;
+	}
+}
+
+.btn_full-width{
+	display: block;
+}
+
+.btn_lg{
+	padding: 20px;
+}
+
+/* ===== Primary call to action ==== */
+#system_branding .btn_call-to-action{
+	border:2px solid #037ecb;
+	background-color: #037ecb;
+	color: #fff;  
+}
+
+#system_branding .btn_call-to-action a{
+	color: #fff;  
+}
+
+#system_branding .btn_call-to-action:hover {
+ 	border:2px solid #00a8e6;
+ 	background-color: #00a8e6;
+}
+
+/* ==== Secondary call to action ==== */
+#system_branding .btn_call-to-action--secondary{
+	border:2px solid #037ecb;
+	color: #037ecb;  
+}
+
+#system_branding .btn_call-to-action--secondary a{
+	color: #037ecb;
+}
+
+#system_branding .btn_call-to-action--secondary:hover {
+ 	border:2px solid #00a8e6;
+ 	text-decoration: underline; 
+}
+
+#system_branding input.btn_submit[type="submit"], 
+#system_branding button.btn_submit[type="submit"]{
+	display: block;
+	float: none;
+	background:#037ecb;
+	color: #fff;  
+	width: 65%;
+}
+
+.btn_center{
+	text-align: center;
+}
+
+.PreviousCollection strong{
+	font-weight: normal;
+}
+
+.PreviousCollection strong:nth-of-type(1){
+	text-transform: lowercase;
+}
+
+h3{
+	font-weight:bold;
+}
+
+.table_no-right-border table th,
+.table_no-right-border table td{
+	border-right: none;
+}
+
+.error{
+	width: 65.2%; 
+	border-top: 4px solid #D50000;
+	border-bottom: 4px solid #D50000; 
+	color: #D50000; 
+	padding:6px 0 6px 4px; 
+	font-weight: 900; 
+	display:block;
+}
+
+#BinChecker_valPostcode{
+	width: 65.2%; 
+	margin-top:0; 
+	border-left: 4px solid #D50000; 
+	color: #D50000; 
+	padding:12px 0 12px 4px; 
+	font-weight: 900;
+}
+
+@media handheld, only screen and (max-width: 600px) {
+	.error,
+	#BinChecker_valPostcode{
+		width: 100%; 
+	}
+
+	#BinChecker_valPostcode{
+		border-top: 4px solid #D50000;
+		border-left: none;
+		position: relative;
+		top: 5px;
+	}
+}
+
+/* ==== Parking CTA ==== */
+
+.cta-column{
+	position: relative; 
+	margin: 0px 0.5% 1.5%; 
+	width: 32.25%; 
+	float: left; 
+	clear: none;
+}
+.btn-center{
+	text-align: center; 
+	padding-bottom: 0px; 
+	margin-top: 1.25em; 
+	margin-bottom: 0px
+}
+
+@media handheld, only screen and (max-width: 600px) {
+	.cta-column{
+		display: block;
+		float: none;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.btn-center{
+		margin: 0;
+	}
+	.btn_action,
+	.btn_action_secondary{
+		display: block;
+		float: none;
+		margin: 0;
+		width:100%;
+	}
+}
+
+@media handheld, only screen and (max-width: 600px) { 
+	.sys_cms-form-control input.sys_medium {
+		width: 100%!important;
+	}
+	.sys_cms-form-control textarea.sys_small {
+		width: 100%!important;
+	}
+	.sys_cms-form-control ul.sys_cms-form-body li.sys_name div.sys_namesubelement input {
+		width: 100%!important;
+	}
+	.sys_cms-form-item sys_buttons,
+	.sys_form-submit, 
+	.sys_cms-form-item button {
+		float: right;
+		/* width: auto!important; */
+		margin-right: 0;
+	}
+	input[type='radio'],
+	input[type="checkbox"] {
+		height: 13px!important;
+		width: 13px!important;
+		padding: 0!important;
+	}
+	.sys_cms-form-control ul.sys_cms-form-body li span.sys_choices_other label.sys_otherlabel {
+		width: auto!important;
+		float: left!important;
+	}
+	#system_content ul.sys_cms-form-validationsummary {
+		margin-bottom :15px;
+	}
+	#system_content .sys_cms-form-control ul li {
+		margin-bottom :5px;
+	}
+	.sys_cms-form-control ul.sys_cms-form-body li.sys_twocolumns div span,
+	.sys_cms-form-control ul.sys_cms-form-body li.sys_threecolumns div span {
+		width: 100%!important;
+	}
+
+	#system_branding input.btn_submit[type="submit"], 
+	#system_branding button.btn_submit[type="submit"]{
+		width: 100%!important;
+	}
+
+}
+
+
+/*-----------------------------------------------------------------
+
+   Internet 10 and 11 CSS 
+
+-----------------------------------------------------------------*/
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   
+   /* IE10/11-specific styles go here */
+   
+   #logo{
+        top: -20px;
+   }
+
+}
+
+/*-----------------------------------------------------------------
+
+   MailChimp sign up form 
+
+-----------------------------------------------------------------*/
+
+#mc_embed_signup{
+    width:40em;
+    float: left;
+}
+
+#mc_embed_signup p{
+	clear: both;
+}
+
+#mce-EMAIL {
+    background-color: #fff;
+    padding: 0.25em 0.5em;
+    border: 4px solid #d5d5d5;
+    font-size: 1em;
+    color: #111;
+    width: 26em;
+    height: auto;
+    margin-bottom: 0;
+    clear: none;
+    height: 47px;
+    margin-top: 5px;
+    display:inline-block;
+}
+
+#mce-EMAIL:focus {
+    border-color: #fc0;
+    outline:0;
+}
+
+#mc_hidden_field{
+	position: absolute; 
+	left: -5000px;
+}
+   
+#mc_embed_signup .mcEmailSignupBox,                             
+#mc_embed_signup .mcEmailSignupInput{
+    display: block;
+    float: none;
+}
+
+#mc_embed_signup p{
+    margin: 0;
+    padding: 0.5em 0 0.25em 0;
+}
+
+#mc_embed_signup .mcEmailSignupBox label{
+    display: none;
+}
+
+input#mc-embedded-subscribe[type="submit"]{
+    float: none; 
+    border: 4px solid #037ecb;
+    display:inline-block;
+    padding: 0.6em 1em 1.6em 1em;
+}
+
+@media screen and (max-width: 960px) and (min-width: 601px){
+
+    #mc_embed_signup{
+        width:28em;
+    }
+
+    #mce-EMAIL {
+        width: 15em;
+    }
+
+}
+
+@media handheld, only screen and (max-width: 600px){
+    
+    #mc_embed_signup,
+    #mce-EMAIL,
+    input#mc-embedded-subscribe[type="submit"]{
+        width: 100%;
+        display: block;
+    }
+
+    #mce-EMAIL{
+        padding: 1em 0.5em;
+    }
+
+}
+
+/*-----------------------------------------------------------------
+
+   Page widths
+
+-----------------------------------------------------------------*/
+
+#system_contentarea #title,
+#system_contentarea #system_branding,
+#system_contentwrapper {
+	display: block;
+	width: 70.05%;
+	/* float: left; */
+	overflow: hidden;
+}
+
+#system_navigation {
+  float: right!important;
+  overflow: visible;
+  width: 22.05%;
+  height: auto;
+  margin-left: 3.8%;
+  /* padding-top: 4.5em; */
+}
+
+/* ==== Online Gateshead Styles ====*/
+/* Remove these styles once online.gateshead.gov.uk has been updated */
+
+#system_container{
+	padding: 0;
+	margin: 0 auto;
+	width: 95%;
+	min-width: 750px;
+	max-width: 1300px;
+	position: relative
+}
+
+#system_container #logo{
+	top: 0;
+}
+
+/* ==== Highlight box ==== */
+
+.highlight-box{
+	background-color: #fffff9;
+	border: 1px solid #e4b833;
+	height: 1%;
+	overflow: auto;
+	padding: 16px 16px 0 16px;
+}
+
+/* ==== Cookie Control ==== */
+
+body #cookie-bar{
+	height: auto;
+	padding: 8px 0;
+}
+
+body #cookie-bar.fixed{
+	z-index: 1000;
+}
+
+body #cookie-bar .cb-enable {
+	background:#43A047;
+}
+
+body #cookie-bar .cb-enable:hover {
+	background:#1B5E20;
+}
+
+body #cookie-bar .cb-disable {
+	background:#990000;
+}
+
+body #cookie-bar .cb-disable:hover {
+	background:#bb0000;
+}
+
+body #cookie-bar .cb-policy {
+	background: none;
+}
+
+body #cookie-bar .cb-policy:hover {
+	color: #fff;
+	background: none;
+}
+
+body #cookie-bar a.cb-policy{
+	color: #fff;
+	text-decoration: underline;
+}
+
+body #cookie-bar a.cb-policy:hover {
+	color: #64B5F6;
+	text-decoration: underline;
+}
+
+/* ==== Tools ==== */
+.hide{
+	position: absolute!important;
+	top: -999em!important;
+	left: -999em!important;
+}
+
+
+.sys_cms-form-body .sys_checkbox.checkboxes input{
+	float: left!important;
+	position: relative;
+	top:7px
+}
+
+.checkboxes label{
+	padding:10px!important;
+	float: left!important;
+	width: 60%!important;
+	display: inline!important;
+}
+
+body div.missedbins label{
+	font-size:1rem!important;
+}
+.missedbins .sys_cms-form-item.sys_radio.sys_sidebyside span{
+	display:inline-block;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin: 1em 0.5em 1em 0;
+	background-color: #eee;
+}
+
+.missedbins.sys_cms-form-control ul li{
+	list-style: none!important;
+}
+
+body div.missedbins .sys_cms-form-item.sys_pagebreak button{
+	background-color: #fff;
+	border: 2px solid #037ecb;
+	color: #037ecb;
+	float:left;
+	margin-top: 3em;
+}
+
+#system_content .missedbins ul.sys_cms-form-body{
+	padding: 0;
+}
+
+#system_content .missedbins .sys_required{
+	color: #D50000;
+}
+
+#system_content .missedbins .sys_cms-form-error{
+	border-left: 4px solid #D50000;
+    background: #FFEBEE;
+    color: #D50000;
+    padding: 16px;
+    margin-bottom: 1em;
+}
+
+#system_content .missedbins .sys_cms-form-validationsummary{
+	display: none
+}
+
+#system_content .missedbins .datepicker input{
+	background: transparent url(/images/icons/calendar.png) 98% 50% no-repeat; 
+} 
+
+body div.missedbins .sys_form-submit{
+	display: block!important;
+	width: 100%!important
+}
+
+#system_content .missedbins .sys_sectionbreak-header{
+	margin-bottom: 0!important;
+    font-size: 1.5rem!important;
+}
+
+#system_content .missedbins .sys_sectionbreak-text{
+	color: #9E9E9E;
+	padding: 10px 0;
+	font-size: 1rem;
+}
+
+.sys_cms-form-body li input, .sys_cms-form-body li select, .sys_cms-form-body li textarea, .sys_cms-form-body li label, .sys_cms-form-body li .sys_legend, .sys_cms-form-body li .sys_fieldlabel{
+	font-family: 'Open Sans', sans-serif!important;
+}
+
+body .missedbins.sys_cms-form-control ul.sys_cms-form-body li .sys_legend{
+	font-size:1rem!important;
+	font-weight: 400
+}
+
+body .missedbins.sys_cms-form-control input.sys_medium.email{
+	width: 97.6%!important;
+}
+
+@media handheld, only screen and (max-width: 600px){
+
+	body div.missedbins ul{
+		list-style: none!important;
+		padding:0!important; 
+		margin:0!important;
+	}
+	body div.missedbins ul li{
+		width: 100%!important;
+		margin:0 0 0.5em 0!important;
+		padding: 0!important;
+		list-style: none!important;
+	}
+
+	body .missedbins.sys_cms-form-control input.sys_medium.email{
+		width: 100%!important;
+	}
+
+	#system_content .missedbins.sys_cms-form-control{
+		padding: 0;
+	}
+
+	#system_contentarea #title h1{
+		margin: 0 10px 25px 0;
+	}
+}
+
+/* ==== Footer ==== */
+
+#footer #contact{
+	width:28%;
+	float:left;
+	position: relative;
+	top:29px;
+	padding: 0 64px 0 0;
+}
+
+#footer #contact a{
+	margin:0;
+	display:block;
+	text-align: center;
+}
+
+#panSubscribe,
+#panSubscribed{
+	float:left;
+	width: 53%;
+	margin:0 auto;
+}
+
+#socialmedia{
+	position:relative;
+	top:20px
+}
+
+.highlight-box#gatesheadnow{
+	padding:0 16px;
+}
+
+#gatesheadnow #panSubscribe,
+#gatesheadnow #panSubscribed{
+	width:100%;
+}
+
+#panSubscribe label{
+	font-size: 1em;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+#panSubscribe input{
+	width: auto;
+	float: none;
+}
+
+#panSubscribe input[type=submit]{
+	margin-right:0;
+	width:20%;
+}
+
+#panSubscribe input#txtEMailAddress{
+	padding:10px;
+	height:auto;
+	width: 73%;
+	margin-right:2px;
+}
+
+#panSubscribed p{
+	clear: both;
+}
+
+@media handheld, only screen and (max-width: 1300px){
+	
+	#panSubscribe,
+	#panSubscribed{
+		width:44%;
+	}
+
+	#panSubscribe input#txtEMailAddress{
+		width:65%;
+	}
+	#panSubscribe input[type=submit]{
+		margin-right:0;
+		width:30%;
+	}
+}
+
+
+@media handheld, only screen and (max-width: 900px){
+	#footer #contact{
+		padding: 0 12px 0 0;
+		width:20%
+	}
+
+	#footer #contact a{
+		margin:0;
+	}
+
+	#panSubscribe,
+	#panSubscribed{
+		width:50%
+	}
+
+	#panSubscribe input#txtEMailAddress{
+		width:70%;
+	}	
+
+	
+	#panSubscribe input[type=submit]{
+		width:30%;
+	}
+
+	#socialmedia{
+		top: 22px;
+		width:26%;
+		padding:0
+	}	
+}
+
+@media handheld, only screen and (max-width: 900px){
+	
+	#footer #contact{
+		padding: 0 12px 0 0;
+		width:48%;
+		margin-bottom: 35px;
+	}
+
+	#footer #contact a{
+		margin:0;
+	}
+
+	#panSubscribe,
+	#panSubscribed{
+		clear:both;
+		width:100%;
+		position: relative;
+		top: 20px;
+	}
+
+	#panSubscribe input#txtEMailAddress{
+		width: 78%;
+	}	
+
+	#panSubscribe input[type=submit]{
+		margin-right: 0;
+		width: 20%;
+	}
+
+	#socialmedia{
+		top:43px;
+		right:0;
+		width:48%;
+		position: absolute;
+	}	
+
+	#socialmedia ul{
+		float:right;
+	}
+}
+
+@media handheld, only screen and (max-width: 600px){
+
+	#footer #contact,
+	#panSubscribe,
+	#panSubscribed,
+	#panSubscribe label,
+  	#panSubscribe input,
+  	#panSubscribe input#txtEMailAddress,
+  	#socialmedia,
+  	#socialmedia ul{
+		float: none;
+		display:block;
+		clear:both;
+		width: 100%!important;
+		top:0;
+		margin:1em 0
+	}
+
+	#socialmedia{
+		text-align:center;
+		margin:0 auto;
+		position:relative;
+		top:-20px;
+		left:15px;
+		width:260px!important;
+	}
+  
+}
+
+/* ==== Site wide alert ==== */
+
+.site-wide-alert{
+	background-color: #212121;
+	height: 1%;
+	overflow: auto;
+	color: #fff;
+}
+
+.alert-content p{
+	margin: 0.5em 0;
+	color: #fff; 
+}
+
+.alert-content a{
+	color: #fff;
+	font-weight: 700;
+}
+
+@media handheld, only screen and (max-width: 600px){
+
+  	.alert-content{
+		padding: 0 20px;
+	}
+  
+}
+
+/* ==== Flooding alert ==== */
+
+#flooding iframe{
+  	overflow:hidden;
+	border:1px solid #fff;
+}
+
+/* ==== Calls to action - Leisure ====*/
+
+#leisure-advert{
+  background-color: #fff;
+  padding: 0px;
+  border: 4px solid #e5e5e5;
+  height: 1%;
+  overflow: auto;
+  }  
+  
+#leisure-advert .col-1{
+  width: 50%; 
+  float: left; 
+  padding-left: 20px;
+  }
+  
+#leisure-advert .col-1 h2{
+  color: #111; 
+  font-size: 24px; 
+  padding-top: 20px;
+  }
+  
+#leisure-advert .col-1 p{
+  color: #111; 
+  font-size: 16px;
+  }
+  
+#leisure-advert .col-2{ 
+  float: right; 
+  background-color: #fff;
+  }
+
+@media handheld, only screen and (max-width: 600px){
+
+	#leisure-advert .col-1,
+	#leisure-advert .col-2{
+		display: block;
+		float: none;
+		width:100%;
+		padding:0 20px 20px;
+	}
+}
+
+#two-column-promo .col-1{
+  float:left;
+  width:48%;
+}
+
+#two-column-promo .col-2{
+  float:right;
+  width:48%;
+}
+
+@media handheld, only screen and (max-width: 600px){
+
+  #two-column-promo .col-1,
+  #two-column-promo .col-2{
+    display: block;
+    float: none;
+    width:100%;
+  }
+  
+}
+
+#christmas-bin-collections-advert{
+	background: #FFEBEE url(/SiteElements/Icons/information2.png) 16px 16px no-repeat;
+	color: #fff;
+	padding: 16px 16px 1px 54px;
+	margin-bottom: 1em;
+	border: 1px solid #D50000;
+}
+
+#christmas-bin-collections-advert h2{
+	float:left;
+	margin-right: 1em;
+}
+
+#christmas-bin-collections-advert .btn_action{
+	background-color: #D32F2F;
+}
+
+#christmas-bin-collections-advert a{
+	color: #D50000;
+	font-weight: 700;
+}
+
+#garden-waste .cta-column{
+	margin: 0 0.5%;
+}
+
+
+.video-container {
+	position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  	
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  	
+
+.youtubevideowrap {  
+  width: 80%;
+  max-width: 640px;  
+  margin: 0 auto;  
+  
+}
+
+.holidayactivities-img{
+  width: 100%; 
+  max-width:100%;
+  margin:1em 0;
+}
+
+.holidayactivities-col-a{
+  float: left; 
+  width:48%;
+}
+
+.holidayactivities-col-b{
+  float: right; 
+  width:48%;
+}
+
+.holidayactivities-col-a ul,
+.holidayactivities-col-b ul{
+	list-style: none;
+	margin: 0 0 1em 0;
+}
+
+.holidayactivities-col-a ul li,
+.holidayactivities-col-b ul li{
+	padding: 4px 0
+}
+
+#holidayactivities-more .sys_subitem{
+	width: 32.25%;
+    float: left;
+    clear: none;
+    position: relative;
+    margin: 1em 0.5% 1.5%;
+    min-height: 120px;
+    background-color: #f1f1f3;
+    padding: 10px 0;
+}
+
+#holidayactivities-more .sys_subitem.sys_first{
+	margin-left:0;
+}
+
+#holidayactivities-more img{
+	float:left;
+	margin:0 3%;
+}
+
+#holidayactivities-more h3{
+	margin-bottom:0
+}
+
+
+@media handheld, only screen and (max-width:600px){
+
+  
+  #content{
+    padding:20px;
+  }
+  
+  .nitro-col-a,
+  .nitro-col-b,
+  .holidayactivities-col-a,
+  .holidayactivities-col-b,
+  #holidayactivities-more .sys_subitem{
+    float: none;
+    margin:1em 0;
+    display:block;
+    width:100%;
+  }
+  
+}
+
+.viewpoint-current-survey{
+	background-color: #DFF1FD;
+	border:1px solid #007FD0;
+	padding:10px; 
+	margin-bottom: 1em;
+	height: 1%;
+	overflow: auto
+}
+
+.viewpoint-current-survey h2,
+.viewpoint-current-survey h3,
+.viewpoint-current-survey p{
+	color:#007FD0;
+}
+
+.viewpoint-current-survey .col-a{
+	margin-right:1em;
+	float:left;
+	width:25%
+}
+
+.viewpoint-current-survey .col-a img{
+	margin: 1em
+}
+
+.viewpoint-current-survey .col-b{
+	margin-right:1em;
+	float:left;
+	width:60%
+}
+
+.viewpoint-current-survey a.btn_action{	
+	background-color:#007FD0;
+	border:2px solid #007FD0;
+}
+
+.viewpoint-current-survey a.btn_action:hover{	
+	color:#fff;	
+	background-color:#33A9F5;
+	border:2px solid #33A9F5;
+}
+
+@media handheld, only screen and (max-width:600px){
+
+	.viewpoint-current-survey .col-a,
+	.viewpoint-current-survey .col-b{
+		display: block;
+		float: none;
+		width:100%;
+	}
+
+	.viewpoint-current-survey .col-a img{
+		margin: 1em auto;
+	}
+}
+
+/* Mobile navigation */
+
+@media handheld, only screen and (max-width:600px){
+	
+	.system_menu{
+		margin:0;
+	}
+
+	.current_folder{
+		border:none;
+		margin:0
+	}
+
+	.current_folder a{
+		background-color: #2b2b2b!important;
+		color:#007FD0!important;
+	}
+
+}
+
+/* ==== Payments ====*/
+
+/* Council tax */
+
+#payment-form label{
+	font-size: 1.2em;
+	font-weight: 700;
+	margin-bottom: 0.5em;
+	padding:0;
+}
+
+
+.jumbo-information{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    font-size: 1.3em;
+}	
+
+.jumbo-information strong {
+    display: block;
+    font-size: 4rem;
+}
+
+.jumbo-information.medium{
+	width:65%;
+}
+
+.jumbo-information.small{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    font-size: 1.3em;
+	width: 65%;
+}
+
+.jumbo-information.small.secondary{
+	border: 4px solid #01579B;
+}
+
+.jumbo-information.small strong {	
+	display: inline;
+    font-size: 1.3rem;	
+}
+
+.jumbo-information.primary{
+	background-color: #01579B;
+    color: #fff;
+}
+
+.jumbo-information.secondary{
+	border: 8px solid #01579B;
+}
+
+.jumbo-information.success{
+	background: #2E7D32 url(/SiteElements/Icons/Forms/formTick.png) 20px 50% no-repeat;
+	color:#fff;
+	text-align: left;
+	padding-left:60px;
+}
+
+#payment-form .required{
+	background: transparent url(/SiteElements/Icons/Forms/formRequired.png) 50% 50% no-repeat;
+	display:inline-block;
+	width:10px;
+	height:10px
+}
+
+#btnhome{
+   	font-size: 1.1em;
+    padding: 6px 12px;
+    border: none;
+    margin: 5px 5px 25px 0px;
+    border-radius: 2px;
+	display: block;
+    float: none;
+    background: #e5e5e5;
+    color: #666;
+    width: 65%;
+	text-align:center;
+	}
+
+.form-secure{
+	border-style: solid;
+}
+
+.form-secure h2{
+	margin-bottom: 0;
+}
+
+.form-secure{
+	background: #fffff9 url(/SiteElements/Icons/Forms/formIconsSecure05x.png) 20px 50% no-repeat;
+	padding: 10px 0 10px 90px;
+	margin-top: 6em;
+	width: 65%;
+}
+
+#payment-confirmation .form-secure{
+	margin: 0 0 1em 0;
+	width:100%;
+}
+
+#payment-confirmation ul{
+	margin-left:1.5em;
+}
+
+table.generic.medium{
+	width: 65%;
+}
+
+#payment-confirmation table.generic td:nth-of-type(1){
+	width:30%;
+	border-right:none;
+}
+
+#payment-confirmation table.generic td:nth-of-type(2){
+	font-weight: 700;
+}
+
+.btn_block{
+	width:100%!important
+}
+
+/* Medium inputs */
+#payment-form #txtPayAmount,
+#payment-form #txtPostcode{
+	width: 8.5em;
+}
+
+@media handheld, only screen and (max-width: 768px){
+
+	.jumbo-information{
+		font-size: 1em;
+	}
+	
+	.jumbo-information.medium{
+		width:100%;
+	}
+
+	.jumbo-information strong {
+		font-size: 2rem;
+	}
+
+	#system_branding #PanViewOrMakePayment input.btn_submit[type="submit"],
+	#system_branding #PanMakePayment input.btn_submit[type="submit"],
+	#PanMakePayment input[type="text"], 
+	#PanMakePayment textarea,
+	#PanMakePayment select,	
+	#PanViewOrMakePayment #btnhome,
+	#system_branding input.btn_submit[type="submit"], 
+	#system_branding button.btn_submit[type="submit"]{
+		width: 100%;
+	}
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+  	.error,
+  	.jumbo-information.medium,
+  	.form-secure,
+  	#btnhome,
+  	#system_branding #PanViewOrMakePayment input.btn_submit[type="submit"],
+	#system_branding #PanMakePayment input.btn_submit[type="submit"],
+	#PanMakePayment input[type="text"], 
+	#PanMakePayment textarea,
+	#PanMakePayment select,	
+	#system_branding #payment-form input.btn_submit[type="submit"],
+	#payment-form input[type="text"], 
+	#payment-form textarea,
+	#payment-form select
+	#PanViewOrMakePayment #btnhome{
+		width: 100%;
+	}
+
+}
+
+/*==== MailChimp radio buttons on payment forms ====*/
+
+table#lstMailOptions,
+table#lstMailOptions td{
+	background: none;
+	border:none
+}
+
+table#lstMailOptions label{
+	float: none;
+	position: relative;
+	top: 2px;
+	width:200px
+}
+
+table#lstMailOptions tr{
+	display:inline-block;
+	width: 32%!important;
+}
+
+table#lstMailOptions input{	
+	float: none;
+	margin-right:1em
+}
+
+@media handheld, only screen and (max-width: 768px){
+	
+	table#lstMailOptions label,
+	table#lstMailOptions input{	
+		display:inline;
+	}
+
+}
+
+/*==== Lists ====*/
+
+#system_contentwrapper ul.plain{
+	list-style: none;
+	margin:0;
+	padding:0
+}
+
+#system_contentwrapper ul.col-2 li{
+	display: block;
+	float:left;
+	width:48%;
+	padding:0 8px 0.5em;
+}
+
+@media handheld, only screen and (max-width:768px){
+	#system_contentwrapper ul.col-2 li{
+		float: none;
+		width:100%;
+	}
+}
+
+#system_contentwrapper ul.lined li{
+	border-bottom: 1px solid #eee;
+}
+
+/* ==== Direct Debit ==== */
+
+.direct-debit{
+	background-color: #f9f9f9;
+	padding:16px;
+	/*width: 65%;*/
+	margin: 0 0 1em 0;
+}
+
+.direct-debit ul{
+	margin-left: 1em;
+}
+
+@media handheld, only screen and (max-width:768px){
+	.direct-debit,
+	.form-secure{
+		margin:0 0 1em 0;
+		width: 100%;
+	}
+
+	.direct-debit img{
+		display: none;
+	}
+}
